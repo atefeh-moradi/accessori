@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>دلایت | صفحه اصلی</title>
+  </head>
+  <body>
+    <div class="mobile-menu">
+      <a href=""> <img class="nav-logo" src="./image/logo.png" alt="" /></a>
+      <ul class="mobile-menu__items">
+        <li class="active">
+          <a href=""
+            ><i class="bx bx-home"></i>
+            <p>خانه</p></a
+          >
+        </li>
+        <li class="">
+          <a href=""
+            ><i class="bx bx-info-circle"></i>
+            <p>درباره ما</p>
+          </a>
+        </li>
+        <li class="">
+          <a href=""
+            ><i class="bx bxs-phone"></i>
+            <p>تماس با ما</p>
+          </a>
+        </li>
+        <li class="">
+          <a href=""
+            ><i class="bx bx-store-alt"></i>
+            <p>محصولات</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <header>
+      <nav>
+        <i class="bx bx-menu nav-menuIcon"></i>
+        <a href="./index.html" class="nav-logo__link">
+          <img class="nav-logo logo2" src="./image/logo.png" alt="" />
+        </a>
+        <div class="nav-right">
+          <a href="./index.html">
+            <img class="nav-logo" src="./image/logo.png" alt=""
+          /></a>
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="./index.html" class="active">خانه</a>
+            </li>
+            <li class="nav-item"><a href="#popular" class="">محصولات</a>
+              <ul>
+                <li><a href="">📿 گردن بند</a></li>
+                <li><a href="">⌚ ساعت</a></li>
+                <li><a href="">💍 انگشتر</a></li>
+              </ul></li>
+            <li class="nav-item"><a href="#footer" class="">تماس با ما</a></li>
+            <li class="nav-item"><a href="#aboutUs" class="">درباره ما</a></li>
+          </ul>
+        </div>
+        <div class="nav-left">
+          <div class="nav-searchbar">
+            <input type="text" placeholder="به دنبال چه میگردید ؟" />
+            <i class="bx bx-search"></i>
+          </div>
+          <!-- <i class="bx bx-search nav-search"></i> -->
+          <a href="./signUp.html">
+            <i class="bx bx-user nav-validation"></i>
+          </a>
+          <div class="basket">
+            <i class="bx bx-shopping-bag nav-basket"></i>
+            <div class="basketContainer">
+              <div class="basketContainer-header">
+                <p>سبد خرید</p>
+                <p>
+                  تعداد محصول : <span class="basketContainer-count">0</span>
+                </p>
+              </div>
+              <img class="emptyBasket" src="./image/empty cart.png" alt="" />
+              <ul class="basketContainer-items"></ul>
+              <div class="basketContainer-footer">
+                <p>
+                  قیمت کل : &nbsp;
+                  <span class="basketContainer-priceAll"> 0 </span>&nbsp; تومان
+                </p>
+                <button class="basketContainer-pay">تسویه حساب</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./image/slide1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/slide2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/slide3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/slide4.jpg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="popular-accessory" id="popular">
+          <div class="popular-accessory__header">
+            <img src="./image/icons8-watch-90.png" alt="" />
+            <div>
+              <p class="popular-title title">اکسسوری محبوب</p>
+              <p class="popular-subtitle subtitle">
+                با ساعت و دست بند دل هر کیو به دست بیار !
+              </p>
+            </div>
+          </div>
+          <div class="popular-accessory__content">
+            <ul class="accessory-boxs"></ul>
+          </div>
+        </div>
+
+        <div class="filter-product">
+          <div class="filter-product__header">
+            <div class="filter-product__header-right">
+              <ul class="filter-product__items">
+                <li class="filter-product__item active">همه</li>
+                <li class="filter-product__item">جدید ترین</li>
+                <li class="filter-product__item">محبوب ترین</li>
+                <li class="filter-product__item">گران ترین</li>
+                <li class="filter-product__item">ارزان ترین</li>
+                <li class="filter-product__item">تخفیف خورده</li>
+              </ul>
+            </div>
+            <div class="filter-product__header-left">
+              <div class="filter-product__seeMore">
+                <i class="bx bx-show"></i>
+                <p>مشاهده بیشتر</p>
+              </div>
+            </div>
+          </div>
+          <div class="filter-product__boxs">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <li class="accessory-box swiper-slide">
+                  <div class="accessory-box__image">
+                    <img src="./image/bracelet.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">اسم محصول</p>
+                    <p class="accessory-box__price">145,000 تومان</p>
+                  </div>
+                </li>
+                <li class="accessory-box swiper-slide">
+                  <div class="accessory-box__image">
+                    <img src="./image/watch5.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">اسم محصول</p>
+                    <p class="accessory-box__price">145,000 تومان</p>
+                  </div>
+                </li>
+                <li class="accessory-box swiper-slide">
+                  <div class="accessory-box__image">
+                    <img src="./image/ring7.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">اسم محصول</p>
+                    <p class="accessory-box__price">145,000 تومان</p>
+                  </div>
+                </li>
+                <li class="accessory-box swiper-slide">
+                  <div class="accessory-box__image">
+                    <img src="./image/Necklaces2.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">اسم محصول</p>
+                    <p class="accessory-box__price">145,000 تومان</p>
+                  </div>
+                </li>
+                <li class="accessory-box swiper-slide">
+                  <div class="accessory-box__image">
+                    <img src="./image/glass1.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">اسم محصول</p>
+                    <p class="accessory-box__price">145,000 تومان</p>
+                  </div>
+                </li>
+                <li class="accessory-box swiper-slide">
+                  <div class="accessory-box__image">
+                    <img src="./image/watch6.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">اسم محصول</p>
+                    <p class="accessory-box__price">145,000 تومان</p>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="aboutUs">
+          <div class="aboutUs-left">
+            <p class="aboutUs-left__title">درباره اکسسوری دلایت</p>
+            <p class="aboutUs-left__subtitle">
+              دلایت در مهر ماه سال 1403 با هدف فروش انواع اکسسوری های مردانه و
+              زنانه شروع به کار کرد .
+            </p>
+            <ul class="aboutUs-left__sercises">
+              <li class="sercises-item">
+                <i class="bx bx-rocket"></i>
+                <div class="servises-item_text">
+                  <p class="servises-item_title">ارسال رایگان</p>
+                  <p class="servises-item_subtitle">
+                    با خرید بالای 500 هزار تومان ارسال محصولات شما رایگان میشود
+                  </p>
+                </div>
+              </li>
+              <li class="sercises-item">
+                <i class="bx bx-badge-check"></i>
+                <div class="servises-item_text">
+                  <p class="servises-item_title">ضمانت اصل بودن</p>
+                  <p class="servises-item_subtitle">
+                    محصولات وارداتی هستند و از اصل بودن آنها شک نکنید
+                  </p>
+                </div>
+              </li>
+              <li class="sercises-item">
+                <i class="bx bx-support"></i>
+                <div class="servises-item_text">
+                  <p class="servises-item_title">پشتیبانی انلاین</p>
+                  <p class="servises-item_subtitle">
+                    با خرید محصول تا رسیدن محصول به دستتان میتوانید با پشتیبانی
+                    در تماس باشید
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="aboutUs-right">
+            <div class="aboutUs-right__imgs">
+              <img src="./image/ring2.jfif" alt="" />
+              <img src="./image/ring3.jfif" alt="" />
+              <img src="./image/ring4.jfif" alt="" />
+              <img src="./image/ring6.jfif" alt="" />
+            </div>
+          </div>
+        </div> -->
+
+        <div class="aboutUs" id="aboutUs">
+          <div class="popular-accessory__header">
+            <img src="./image/icons8-watch-90.png" alt="" />
+            <div>
+              <p class="popular-title title">درباره ما</p>
+              <p class="popular-subtitle subtitle">
+                ما را با سطح و کیفیت بالا بشناسید !
+              </p>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <img src="./image/bracelet.jfif" alt="" />
+              <div class="aboutUs-info">
+                <i class="bx bx-rocket"></i>
+                <p class="aboutUs-title">ارسال سریع و رایگان</p>
+                <p class="aboutUs-subtitle">
+                  با خرید بالای 500 هزار تومان ارسال محصولات شما رایگان میشود
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img src="./image/watch8.jfif" alt="" />
+              <div class="aboutUs-info">
+                <i class="bx bx-badge-check"></i>
+                <p class="aboutUs-title">ضمانت اصل بودن</p>
+                <p class="aboutUs-subtitle">
+                  محصولات دلابت وارداتی هستند و برای خرید از اصل بودن آنها شک
+                  نکنید
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img src="./image/watch5.jfif" alt="" />
+              <div class="aboutUs-info">
+                <i class="bx bx-support"></i>
+                <p class="aboutUs-title">پشتیبانی انلاین</p>
+                <p class="aboutUs-subtitle">
+                  با خرید محصول تا رسیدن محصول به دستتان میتوانید با پشتیبانی در
+                  تماس باشید
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img src="./image/ring7.jfif" alt="" />
+              <div class="aboutUs-info">
+                <i class="bx bxs-credit-card"></i>
+                <p class="aboutUs-title">پرداخت امن از درگاه بانکی</p>
+                <p class="aboutUs-subtitle">
+                  تضمین بابت امن بودن و سریع بودن درگاه پرداخت فروشگاه دلایت
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img src="./image/Necklaces4.jfif" alt="" />
+              <div class="aboutUs-info">
+                <i class="bx bx-rotate-left"></i>
+                <p class="aboutUs-title">تضمین بازگشت وجه</p>
+                <p class="aboutUs-subtitle">
+                  در صورتی که از محصول ناراضی بودید میتوانید از طریق پنل کاربری
+                  آن را مرجوع کنید
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer_continer">
+        <div class="footer_1">
+          <p class="footer_1_title">تماس با ما</p>
+          <p class="footer_1_address">
+            ایران ، مشهد ، فلکه طبرسی ، خیابان ایه اللّه کشانی ، نوغان 14، پلاک7
+          </p>
+          <a class="footer_1_email" href="">apple.gmail.com</a>
+          <p class="footer_1_phoneNumber">021 <span>34451028</span></p>
+          <div class="footer_1_Support">
+            <p>پشتیبانی سریع</p>
+            <i class="bx bx-phone"></i>
+          </div>
+        </div>
+
+        <div class="footer_2">
+          <p class="footer_2_title">فروشگاه اینترنتی</p>
+          <p class="footer_2_info">
+            شرکت اپل یک شرکت بین‌المللی آمریکایی است که در زمینه طراحی و
+            بازاریابی نرم‌افزارها و سخت‌افزارهای رایانه‌ای، رایانه‌های شخصی،
+            گوشی تلفن و دیگر دستگاه‌ها و ابزارهای الکترونیکی فعالیت می‌کند. شرکت
+            apple یکی از تاثیرگذارترین شرکت‌های جهان به شمار می‌آید. نام این
+            شرکت با نام موسس آن استیو جابز گره خورده است. در سال 2021 ارزش شرکت
+            اپل بیش از 2 تریلیون دلار برآور گردید. بسیاری از مردم اپل را با برخی
+            از محصولات سخت افزاری‌اش مثل مکینتاش، آی فون، آی‌پاد و آی‌پد
+            ‌می‌شناسند.
+          </p>
+        </div>
+
+        <div class="footer_3">
+          <p class="footer_3_title">دسترسی سریع</p>
+          <div class="footer_3_link">
+            <a href="">همه محصولات</a>
+            <a href="">جدید ترین</a>
+            <a href="">محبوب ترین</a>
+            <a href="">پرفروش ترین</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>داشبورد ادمین</title>
+  </head>
+  <body>
+    <div class="sideBar-container">
+      <div class="sideBar-menu">
+        <a href="../index.html">
+          <img src="../../image/logo.png" alt="" class="sideBar-logo"
+        /></a>
+        <ul class="sideBar-items">
+          <li class="sideBar-item">
+            <div>
+              <p>پست ها</p>
+              <i class="bx bx-note"></i>
+            </div>
+            <ul>
+              <li><a href="../post/addPost.html">اضافه کردن</a></li>
+              <li><a href="../post/listPost.html">لیست پست ها</a></li>
+            </ul>
+          </li>
+          <li class="sideBar-item">
+            <div>
+              <p>مقاله ها</p>
+              <i class="bx bx-receipt"></i>
+            </div>
+            <ul>
+              <li><a href="../article/addArticle.html">اضافه کردن</a></li>
+              <li><a href="../article/listArticle.html">لیست مقاله ها</a></li>
+            </ul>
+          </li>
+          <li class="sideBar-item">
+            <div class="active">
+              <p>کاربر ها</p>
+              <i class="bx bx-user"></i>
+            </div>
+            <ul>
+              <li><a href="../users/addUsers.html">اضافه کردن</a></li>
+              <li><a href="../users/listUsers.html">لیست کاربر ها</a></li>
+            </ul>
+          </li>
+          <li class="sideBar-item">
+            <div>
+              <p>ادمین ها</p>
+              <i class="bx bx-group"></i>
+            </div>
+            <ul>
+              <li><a href="../admins/addAdmin.html">اضافه کردن</a></li>
+              <li><a href="../admins/listAdmin.html">لیست ادمین ها</a></li>
+            </ul>
+          </li>
+          <li class="sideBar-item">
+            <div>
+              <p>مالک ها</p>
+              <i class="bx bx-check-shield"></i>
+            </div>
+            <ul>
+              <li><a href="../owners/addOwner.html">اضافه کردن</a></li>
+              <li><a href="../owners/listOwner.html">لیست مالک ها</a></li>
+            </ul>
+          </li>
+          <li class="sideBar-item">
+            <div>
+              <p>پیام های دریافتی</p>
+              <i class='bx bx-chat'></i>
+            </div>
+            <ul>
+              <li>
+                <a href="../messagesUser/messagesUser.html">لیست پیام ها</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sideBar-item">
+            <div>
+              <p>اجزای سایت</p>
+              <i class="bx bx-data"></i>
+            </div>
+            <ul>
+              <li>
+                منو <input class="sideBar-checkbox" type="checkbox" name="" />
+              </li>
+              <li>
+                اسلایدر اصلی
+                <input class="sideBar-checkbox" type="checkbox" name="" />
+              </li>
+              <li>
+                محصولات فروشگاه
+                <input class="sideBar-checkbox" type="checkbox" name="" />
+              </li>
+              <li>
+                اسلایدر جدید ترین
+                <input class="sideBar-checkbox" type="checkbox" name="" />
+              </li>
+              <li>
+                فیلتر محصولات
+                <input class="sideBar-checkbox" type="checkbox" name="" />
+              </li>
+              <li>
+                پا صفحه
+                <input class="sideBar-checkbox" type="checkbox" name="" />
+              </li>
+            </ul>
+          </li>
+          <li class="sideBar-item logout">
+            <a
+              href=""
+              style="display: flex; justify-content: flex-end; gap: 0.4rem"
+            >
+              <p>خروج</p>
+              <i class="bx bx-log-out"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideBar-content">
+        <p class="suc-msg">پست با موفقیت اضافه شد !</p>
+        <p class="err-msg">لطفا همه فیلد ها را پر کنید !</p>
+        <div class="sideBar-content__container">
+          <table border="0" style="border-collapse: collapse">
+            <thead>
+              <tr>
+                <th>ردیف</th>
+                <th>نام کاربری</th>
+                <th>ایمیل</th>
+                <th>رمز عبور</th>
+                <th>عکس</th>
+                <th>عملیات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>tornado</td>
+                <td>tornado@gmail.com</td>
+                <td>tornado1010</td>
+                <td><img src="../../image/about image (1).jpeg" alt=""></td>
+                <td><a href="#">حذف</a> <a href="#">ویراش</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

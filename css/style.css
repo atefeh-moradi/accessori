@@ -1,0 +1,384 @@
+@import url(./variable.css);
+@import url(./validation.css);
+@import url(./basket.css);
+@import url(./filterProduct.css);
+@import url(./aboutUs.css);
+@import url(./footer.css);
+/* @import url(../SideBar/style.css); */
+
+@font-face {
+  font-family: "iranSans";
+  src: url(../fonts/woff2/IRANSansWeb\(FaNum\).woff2);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(251, 251, 251);
+}
+body.active {
+  overflow-y: hidden;
+}
+
+* {
+  font-family: "iranSans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black1);
+}
+i {
+  cursor: pointer;
+}
+input,
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.title {
+  font-size: 1.2rem;
+}
+.subtitle {
+  color: var(--black2);
+  font-size: 0.9rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+.nav-right,
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo {
+  width: 7rem;
+  margin-left: 2rem;
+}
+.nav-logo__link {
+  display: none;
+}
+.nav-menuIcon {
+  font-size: 1.8rem;
+  display: none;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-items li {
+  position: relative;
+}
+.nav-items li a {
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-items li a:hover {
+  color: var(--primaryLight);
+}
+
+.nav-items li a.active {
+  color: var(--primaryLight);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-items li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0.15rem;
+  bottom: -0.3rem;
+  right: 0;
+  background-color: var(--primaryLight);
+  transition: 0.3s;
+}
+.nav-items li a:hover::after {
+  width: 100%;
+}
+
+.nav-items li ul {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  padding: 0.7rem;
+  background-color: var(--white1);
+  z-index: 9999;
+  border-radius: 0.3rem;
+  width: 10rem;
+  box-shadow: 0 -5px 15px var(--black3);
+  gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.2rem solid var(--primaryLight);
+  transition: 0.4s;
+  visibility: hidden;
+}
+.nav-items li ul li a {
+  font-size: 0.9rem;
+}
+
+.nav-items li:hover ul{
+  visibility: visible;
+}
+
+.nav-searchbar {
+  width: 13rem;
+  height: 2.2rem;
+  margin-left: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-searchbar input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  /* border: 1.5px solid var(--black2); */
+  background-color: var(--black3);
+}
+.nav-searchbar i {
+  position: absolute;
+  left: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--black2);
+  transition: 0.3s;
+}
+.nav-searchbar i:hover {
+  color: var(--black1);
+}
+
+.nav-basket,
+.nav-validation,
+.nav-search {
+  font-size: 1.3rem;
+  margin: 0 0.3rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white1);
+  background-color: var(--primaryLight);
+}
+.nav-search {
+  display: none;
+}
+
+/*main*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  width: 85%;
+}
+
+.swiper {
+  width: 100%;
+  direction: ltr;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/*popular-accessory*/
+.popular-accessory {
+  margin-top: 3rem;
+}
+.popular-accessory__header {
+  display: flex;
+  align-items: center;
+}
+.popular-accessory__header img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  background-color: var(--primaryLight);
+  margin-left: 0.7rem;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+.accessory-boxs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 0.5fr));
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.accessory-box {
+  background-color: var(--white1);
+  box-shadow: 0 5px 15px var(--black3);
+  overflow: hidden;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.accessory-box__image {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+}
+.accessory-box__image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.accessory-box__image img:hover {
+  transform: scale(1.1);
+}
+.accessory-box__btns {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.accessory-box__btns i {
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+  background-color: var(--white1);
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+.accessory-box__content {
+  color: var(--black1);
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.accessory-box__price {
+  color: var(--black2);
+}
+
+/*mobile-menu*/
+.mobile-menu {
+  position: absolute;
+  left: -20rem;
+  background-color: var(--white2);
+  width: 20rem;
+  height: 100vh;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  z-index: 999999;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mobile-menu.active {
+  left: 0;
+}
+.mobile-menu .nav-logo {
+  margin: 1rem 0;
+  width: 9rem;
+}
+.mobile-menu__items {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 3rem;
+}
+.mobile-menu__items li {
+  margin-bottom: 1em;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.mobile-menu__items li:hover {
+  background-color: var(--black3);
+}
+.mobile-menu__items li.active {
+  background-color: var(--black3);
+}
+.mobile-menu__items li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  background-color: transparent;
+}
+.mobile-menu__items li i {
+  font-size: 1.3rem;
+  margin-left: 0.7rem;
+}
+@media (max-width: 850px) {
+  .nav-searchbar {
+    display: none;
+  }
+  .nav-search {
+    display: flex;
+  }
+  .accessory-boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9.5rem, 0.5fr));
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .accessory-box__image {
+    height: 12rem;
+  }
+  .accessory-box__content {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-logo__link,
+  .nav-logo {
+    display: block;
+    margin: 0;
+  }
+  .nav-left {
+    display: none;
+  }
+  .nav-right {
+    display: none;
+  }
+  .nav-menuIcon {
+    display: block;
+  }
+}
+
+@media (min-width: 650px) {
+  .mobile-menu {
+    display: none;
+  }
+}

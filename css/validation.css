@@ -1,0 +1,179 @@
+.validation {
+  background-color: var(--white1);
+  width: 100%;
+  height: 100vh;
+}
+.validation-closeBtn {
+  background-color: var(--black3);
+  padding: 0.3rem 1rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.signUp,
+.signIn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUp-right,
+.signIn-right {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signUp-right img,
+.signIn-right img {
+  width: 12rem;
+  margin: 0;
+}
+.signUp-right form,
+.signIn-right form {
+  width: 28rem;
+  height: auto;
+  box-shadow: 0 10px 45px var(--gray);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.signUp-form__title,
+.signIn-form__title {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+}
+.signUp-form__subtitle,
+.signIn-form__subtitle {
+  margin-bottom: 2rem;
+}
+.signUp-form__subtitle a,
+.signIn-form__subtitle a {
+  color: var(--primaryLight);
+  font-weight: 900;
+}
+.input-signUp,
+.input-signIn {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-signUp input,
+.input-signIn input {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 2.7rem;
+  background-color: var(--black3);
+  border-radius: 0.3rem;
+  padding: 0 0.5rem;
+}
+.input-signUp i,
+.input-signIn i {
+  position: absolute;
+  left: 0.7rem;
+  top: 22%;
+}
+.signUpBtn,
+.signInBtn {
+  background-color: var(--primaryLight);
+  width: 100%;
+  height: 2.7rem;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  color: var(--white1);
+  transition: 0.4s;
+}
+.signUpBtn:hover,
+.signInBtn:hover {
+  background-color: var(--primary);
+}
+
+.signUp-left,
+.signIn-left {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 1rem;
+  background-color: var(--white1);
+}
+.signUp-left img,
+.signIn-left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.forgetPass{
+  margin-top: 1.3rem;
+  font-size: .9rem;
+  color: var(--black2);
+  display: inline-block;
+}
+
+.validation-msgs{
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white3);
+  backdrop-filter: blur(10px);
+  z-index: 99999999999999999999999;
+  position: fixed;
+}
+.validation-msgs.active{
+display: flex;
+}
+.validation-msgF,
+.validation-msgT {
+  position: absolute;
+  right: 50%;
+  top: 40%;
+  transform: translate(50%,50%);
+  width: 20rem;
+  height: 5rem;
+  direction: ltr;
+  color: red;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(228, 153, 153);
+  border: 2px solid red;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  z-index: 999999999999;
+}
+.validation-msgT {
+  color: green;
+  background-color: rgb(153, 228, 159);
+  border: 2px solid green;
+}
+
+@media (max-width: 800px) {
+  .signUp-right,.signIn-right {
+    width: 100%;
+  }
+  .signUp-left, .signIn-left {
+    display: none;
+  }
+  .signUp-right form ,.signIn-right form{
+    width: 95%;
+  }
+}

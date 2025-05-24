@@ -1,0 +1,14 @@
+:root {
+    --primary: #5a493f;
+    --primaryLight: #c49b83;
+    --black1: #000;
+    --black2: #00000070;
+    --black3: #00000015;
+    --white1: #fff;
+    --white2: #ffffff70;
+    --white3: #ffffff15;
+    --gray: rgb(191, 191, 191);
+    --green: #29a747;
+    --red: #ff3822;
+    --yellow: #ffd322;
+  }
