@@ -10,7 +10,7 @@
 .footer_continer {
   width: 90%;
   height: 100%;
-  direction: ltr;
+  /* direction: ltr; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -85,7 +85,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  order: -1;
 }
 
 .footer_2_title {

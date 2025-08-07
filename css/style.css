@@ -3,15 +3,20 @@
 @import url(./basket.css);
 @import url(./filterProduct.css);
 @import url(./aboutUs.css);
+@import url(./product.css);
 @import url(./footer.css);
+@import url(./article.css);
+@import url(./search.css);
+@import url(./weblogInfo.css);
 /* @import url(../SideBar/style.css); */
 
 @font-face {
-  font-family: "iranSans";
-  src: url(../fonts/woff2/IRANSansWeb\(FaNum\).woff2);
+  font-family: iranSans;
+  src: url('../fonts/woff2/IRANSansWeb\(FaNum\).woff2');
 }
 html {
   scroll-behavior: smooth;
+  font-family: iranSans;
 }
 body {
   background-color: rgb(251, 251, 251);
@@ -21,10 +26,10 @@ body.active {
 }
 
 * {
-  font-family: "iranSans";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: iranSans;
 }
 ul {
   list-style: none;
@@ -217,11 +222,12 @@ main {
 
 /*popular-accessory*/
 .popular-accessory {
-  margin-top: 3rem;
+  margin-top: 0rem;
 }
 .popular-accessory__header {
   display: flex;
   align-items: center;
+  padding-top: 1rem;
 }
 .popular-accessory__header img {
   width: 3rem;
